@@ -7,7 +7,7 @@ list.addEventListener('click', (e) => {
     const li = e.target.parentElement;
     li.parentNode.removeChild(li);
   }
-});
+}); 
 
 // add books
 const addForm = forms['add-book'];
@@ -34,13 +34,12 @@ addForm.addEventListener('submit', function(e){
   list.appendChild(li);
 });
 
-//hide books
-const hideBox =document.querySelector("#hide");
-hideBox.addEventListener("change", function(e){
+// hide books
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
   if(hideBox.checked){
-   list.style.display = "none"; 
-  } else{
+    list.style.display = "none";
+  } else {
     list.style.display = "initial";
   }
-
 });
